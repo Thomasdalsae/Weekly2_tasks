@@ -50,7 +50,7 @@ void task1() {
 	std::cout << "2: For loop" << std::endl;
 	std::cin >> input;
 	system("cls");
-		
+	//commet haha funny
 	switch (input) {
 	case '1':
 			std::cout << "User Wanted to see :While-loop" << std::endl;
