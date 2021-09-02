@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 void task1();
 void task2();
@@ -50,10 +51,9 @@ void task1() {
 	std::cout << "2: For loop" << std::endl;
 	std::cin >> input;
 	system("cls");
-	//commet haha funny
 	switch (input) {
 	case '1':
-			std::cout << "User Wanted to see :While-loop" << std::endl;
+			std::cout << "User wanted to see :While-loop" << std::endl;
 
 		while (nr <= 100)
 		{
@@ -70,19 +70,108 @@ void task1() {
 }
 
 void task2() {
+	std::cout << "100 to 1 with for-loop" << std::endl;
+
+	for (int nr = 100; nr >= 1; nr--)
+		std::cout << nr << " ";
 
 }
 void task3() {
-
+	int nr{5};
+	while (nr <= 50)
+	{
+		std::cout << nr << " ";
+		nr += 5 ;
+		
+		
+	}
 }
 void task4() {
 
+	for (int nr = 5; nr <= 50; nr += 5)
+		std::cout << nr << " ";
 }
 void task5() {
+	int nr{ 5 };
+	do 
+	{
+		std::cout << nr << " ";
+		(nr += 5);
 
+		
+
+	}
+	while (nr <= 50); 
+	
 }
 void task6() {
 
+		bool correct = false;
+	    while (correct == false) {
+		std::string input{};
+		//Safty net
+		char c{ 'W' };
+		system("pause");
+		system("cls");
+
+
+		std::cout << "Which grade do you want in Programming 1: " << std::endl;
+		std::cin >> input;
+
+		if (input.size() > 1)
+		{
+			std::cout << "Wrong" << std::endl;
+
+
+		}
+		else
+		{
+			c = input[0];
+			correct = true;
+			
+		}
+
+		switch (toupper(c)) {
+		case 'A':
+			std::cout << "Outstanding" << std::endl;
+
+			break;
+
+		case 'B':
+			std::cout << "Very good" << std::endl;
+			
+
+			break;
+		case 'C':
+			std::cout << "Good" << std::endl;
+
+			break;
+		case 'D':
+			std::cout << "Some flaws" << std::endl;
+
+			break;
+
+		case 'E':
+			std::cout << "Not very good..." << std::endl;
+
+			break;
+
+		case 'F':
+			std::cout << "Fail" << std::endl;
+
+			break;
+
+		default:
+			std::cout << "That is not a grade!";
+			correct = false;
+
+			break;
+
+
+
+
+		}
+	}
 }
 
 
