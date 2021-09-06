@@ -13,12 +13,12 @@ int main() {
 	char input{};
 	std::cout << "Enter number between 1-6 to show corresponding task: ";
 	std::cout << "Task 1" << std::endl;
-	std::cout << "Task 2";
-	std::cout << "Task 3";
-	std::cout << "Task 4";
-	std::cout << "Task 5";
-	std::cout << "Task 6";
-	std::cout << "Quit";
+	std::cout << "Task 2" << std::endl;
+	std::cout << "Task 3" << std::endl;
+	std::cout << "Task 4" << std::endl;
+	std::cout << "Task 5" << std::endl;
+	std::cout << "Task 6" << std::endl;
+	std::cout << "Quit"   << std::endl;
 
 
 	std::cin >> input;
@@ -185,20 +185,3 @@ void task6() {
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-////task1();
-//task2();
-//task3();
-//task4();
-//task5();
-//task6();
